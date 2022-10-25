@@ -6,6 +6,7 @@
 html{
     min-height:100%;/* make sure it is at least as tall as the viewport */
     position:relative;
+    box-sizing: border-box;
 }
 
 body {
@@ -18,7 +19,7 @@ body {
     /* overflow: hidden;  */
 }
 * {
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 a {

@@ -2,7 +2,7 @@
   position: relative;
   background-color: black;
   padding: 20px;
-  max-width: 100%;
+  width: 70vw;
   margin-left: auto;
   margin-right: auto;
 }
@@ -11,6 +11,7 @@
   overflow: hidden;
   width: 100%;
   cursor: grabbing;
+  
 }
 
 .embla__container {
@@ -27,7 +28,7 @@
 
 .embla__container > div {
     flex: 0 0 auto;
-    width: 50%;
+    width: 40%;
     position: relative;
     padding-left: 20px;
     padding-right: 20px;

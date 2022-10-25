@@ -119,13 +119,25 @@
       },
       {
         "title": "Novel Reader Website",
-        "description": "Scrapes novels from boxnovel, saving them and allows the user to read his novels while saving his progress and allowing him to bookmark his favourite quotes.",
-        "link": "git.com"
+        "description": "My favourite. Scrapes novels from boxnovel, saving them and allows the user to read his novels while saving his progress and allowing him to bookmark his favourite quotes.",
+        "link": "https://github.com/pokerfce/novel-reader-website-offline"
+      },
+      {
+        "title": "Glossary",
+        "description": "A website, meant to be online using Firebase, created in order to store my unorganised definitions by #tags and such. I also tried to implement stackoverflow text editor.",
+        "link": "https://github.com/pokerfce/glossary"
       },
       {
         "title": "My Website",
         "description": "An exciting project, created using a NextJS, which is a framework of React I was unfamiliar with. Still lacking android integration.",
-        "link": "git5.com"
+        "link": "https://github.com/pokerfce/mahdiabdelkebir.github.io"
+      },
+      {
+        "title": "Shop Organizer",
+        "description": "A tool I created because the shop I worked at, had too many products and I was simply overwhelmed and couldn't keep up.",
+        "link": "https://github.com/pokerfce/shop-organizer"
       }
+
+     
     ]
 }
