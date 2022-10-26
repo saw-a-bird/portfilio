@@ -6,7 +6,7 @@ module.exports = {
    * Tell Next.js where the `public` folder is.
    * Replace `nextjs-github-pages` with your Github repo project name.
    */
-  assetPrefix: isProd ? "/mywebsite/" : "",
+  assetPrefix: isProd ? "/portfilio/" : "",
   /**
    * Disable server-based image optimization.
    *
@@ -15,4 +15,6 @@ module.exports = {
   images: {
     unoptimized: true,
   },
+  basePath: "/nextjs-pages",
+  assetPrefix: "/nextjs-pages",
 };
