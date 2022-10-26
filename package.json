@@ -1,7 +1,7 @@
 {
   "name": "portfilio",
   "version": "0.1.0",
-  "homepage": "https://pokerfce.github.io/portfilio",
+  "homepage": "https://mahdi-abdelkebir.github.io/portfilio",
   "private": true,
   "scripts": {
     "predeploy": "npm run build",
