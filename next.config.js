@@ -1,5 +1,4 @@
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === "production";
 
 module.exports = {
   /**
@@ -14,6 +13,6 @@ module.exports = {
   images: {
     unoptimized: true,
   },
-  basePath: "/nextjs-pages",
-  assetPrefix: "/nextjs-pages",
+  basePath: "/portfilio",
+  assetPrefix: "/portfilio",
 };
