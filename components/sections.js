@@ -12,11 +12,11 @@ import EmblaCarousel from './EmbaCarousel.js';
 export const PageSection = (props) => (
       <section className="mt-[100vh] h-[100vh] flex content-center" id={ props.name.toLowerCase() } >
           <div className = {`bg-black/[.6] h-fit my-auto ${sectionsCSS.page_section} w-full py-5 ${props.paddingB != null? "pb-"+props.paddingB: ""} font-mono text-white text-xl`}>
-              <h2 className={ ` ${sectionsCSS.blinking} ${sectionsCSS.header} text-6xl sm:text-4xl font-extrabold mb-8 text-center `}>
+              <h2 className={ ` ${sectionsCSS.blinking} ${sectionsCSS.header} text-6xl md:text-4xl font-extrabold mb-8 text-center `}>
                   {props.name}
               </h2>
 
-              <div className={ props.children_classes != undefined? props.children_classes : "sm:w-5/6 md:w-4/6 lg:w-2/3 mx-auto" }>
+              <div className={ props.children_classes != undefined? props.children_classes : "md:w-5/6 md:w-4/6 lg:w-2/3 mx-auto" }>
                   {props.children}
               </div>
           </div>
@@ -30,13 +30,13 @@ const MainPage = () => (
     
           <div className={`font-bold text-gradient bg-gradient-to-tl from-green-100 via-white to-gray-400 animate-gradient-x ${sectionsCSS.blinking}`}>
     
-            <h1 className="text-gradient sm:text-2xl text-4xl ">
+            <h1 className="text-gradient md:text-2xl text-4xl ">
               Hi! I'm Mahdi Abdelkebir. 
             </h1>
-            <h2 className="text-gradient sm:text-2xl text-3xl ">
+            <h2 className="text-gradient mds:text-2xl text-3xl ">
               I'm a software developer.
             </h2>
-            <h3 className="font-normal text-gradient hover:font-medium sm:text-md text-xl mt-8">
+            <h3 className="font-normal text-gradient hover:font-medium md:text-md text-xl mt-8">
               Scroll down for more details.
             </h3>
     
