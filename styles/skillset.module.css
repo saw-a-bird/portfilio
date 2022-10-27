@@ -1,0 +1,70 @@
+
+.legendScale span {
+    font-size: 80%;
+    line-height: 12px;
+    vertical-align: text-top;
+}
+
+.box {
+    display: inline-block;
+    height: 12px;
+    width: 14px;
+    border: 1px solid #999;
+}
+
+.scale {
+    margin-left: -4px;
+}
+
+.talents > div {
+    opacity: 0.8;
+    cursor:pointer;
+}
+
+.valueGood {
+    background-color: rgb(113 194 124);
+}
+
+.valueNormal {
+    background-color: rgb(168, 163, 64);
+}
+
+.valueBasic {
+    background-color: #9390a5;
+}
+
+.talents > div:hover {
+    opacity: 1;
+}
+
+
+/* Default */
+.circleTitle {
+    font-size:initial;
+}
+
+.skillTitle {
+    font-size: 17px;
+}
+
+.progressBox {
+    width:25%
+}
+/* For Mobile */
+@media screen and (max-width: 768px) {
+    .circleTitle {
+        font-size:10px;
+    }
+
+    .skillTitle {
+        font-size: initial;
+    }
+
+    .valueBox {
+        font-size:13px;
+    }
+
+    .progressBox {
+        width:33%
+    }
+}

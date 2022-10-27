@@ -4,7 +4,7 @@ import {  faFacebookF , faLinkedin, faGithub} from '@fortawesome/free-brands-svg
 import Info from '../public/json/personal_info.json'
 
 const SocialMediaLinks = ()  => (
-    <nav className = {social.nav}>
+    <nav className = {`${social.nav} lg:hidden block`}>
         <ul>
             <li id = {social.fb}>
                 <a href={Info.links.fb}>
