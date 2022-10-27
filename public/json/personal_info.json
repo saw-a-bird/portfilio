@@ -105,12 +105,12 @@
       {
         "title": "Certifications Website",
         "description": "Scrapes certification exams PDFs from gratisexam and provides a way to take the test online.",
-        "link": "git.com"
+        "link": "https://github.com/mahdi-abdelkebir/certifications_online"
       },
       {
         "title": "eCommerce Website",
-        "description": "For my first big project, my father proposed to me to create a commercial website for him to sell his products online for bigger customer base.",
-        "link": "git2.com"
+        "description": "For my first big project, my father proposed to me to create a commercial website for him to sell his products online for bigger customer base. Made with native PHP CSS and HTML.",
+        "link": "https://github.com/mahdi-abdelkebir/ecommerce_toolshop_php"
       },
       {
         "title": "Commercial Management Application",
@@ -130,7 +130,7 @@
       {
         "title": "My Website",
         "description": "An exciting project, created using a NextJS, which is a framework of React I was unfamiliar with. Still lacking android integration.",
-        "link": "https://github.com/mahdi-abdelkebir/mahdiabdelkebir.github.io"
+        "link": "https://github.com/mahdi-abdelkebir/portfilio"
       },
       {
         "title": "Shop Organizer",

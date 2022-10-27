@@ -1,25 +1,15 @@
 
 .header {
-  left: 20%;
-  right: 20%;
   position: fixed;
   top: 0;
-  padding-left: 50px;
   z-index:20;
-  /* display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: center;
-  padding-left: 48px;
-  padding-right: 130px; */
 }
 
-.header .logo {
+
+/* .header .logo {
   -webkit-transform: translateY(-200px);
   transform: translateY(-200px);
-}
+} */
 
 .menuLink {
   -webkit-user-select: none; /* Safari */        
@@ -29,11 +19,8 @@
   cursor:pointer;
   display: inline-block;
   background-color: rgb(255, 240, 240);
-  width: 140px;
-  height: 75px;
   text-decoration: none;
   color: #b0b0b0;
-  font-size: 17px;
   font-weight: 700;
   letter-spacing: 1px;
   text-align: center;
@@ -85,4 +72,32 @@
 
 .menuLink.active:hover:after {
   background-color: #6cb2e9
+}
+
+/* Default */
+.header {
+  left: 20%;
+  right: 20%;
+  padding-left: 50px;
+}
+
+.menuLink {
+  width: 140px;
+  height: 75px;
+  font-size: 17px;
+}
+
+/* For Mobile */
+@media screen and (max-width: 768px) {
+  .header {
+    left: 10%;
+    right: 10%;
+    padding-left: 10px;
+  }
+
+  .menuLink {
+    width: 90px;
+    height: 70px;
+    font-size: 13px;
+  }
 }

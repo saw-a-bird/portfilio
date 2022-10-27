@@ -6,7 +6,7 @@
 html{
     min-height:100%;/* make sure it is at least as tall as the viewport */
     position:relative;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
 }
 
 body {
@@ -15,9 +15,9 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
     sans-serif;
-
     /* overflow: hidden;  */
 }
+
 * {
     box-sizing: inherit;
 }
@@ -38,3 +38,4 @@ a {
 .test {
     rotate: 45
 }
+

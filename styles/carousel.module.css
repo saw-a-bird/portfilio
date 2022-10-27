@@ -28,10 +28,7 @@
 
 .embla__container > div {
     flex: 0 0 auto;
-    width: 40%;
     position: relative;
-    padding-left: 20px;
-    padding-right: 20px;
     border: 1px solid white;
     align-items: center;
     margin: 0 10px;
@@ -79,3 +76,21 @@
 .embla__button__next {
   right: 27px;
 }
+
+
+/* Default */
+.embla__container > div {
+  width: 40%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* For Mobile */
+@media screen and (max-width: 768px) {
+  .embla__container > div {
+    width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
