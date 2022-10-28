@@ -1,7 +1,7 @@
-import Head from 'next/head'
+
 import Link from 'next/link'
-import Navigation from './navigation'
-import ParticleArea from './particles'
+import Navigation from './_navigation'
+import ParticleArea from './_particles'
 
 export const siteTitle = 'Here\'s what you need to know about me.'
 

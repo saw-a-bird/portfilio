@@ -2,7 +2,7 @@ import navCSS from '../styles/navigation.module.css'
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import $ from "jquery"
-import jumpTo from './_jump';
+import jumpTo from './__jump';
 
 export default function Navigation() {
     const boxRef = useRef();
