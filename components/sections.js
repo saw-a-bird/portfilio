@@ -174,7 +174,7 @@ export const SkillSetPage = () => {
         </div>
       </div>
       
-      <div className="text-center w-1/2 ml-5 pl-5 sm:ml-0 sm:pl-0">
+      <div className="text-center w-1/2 ml-5 pl-5 sm:ml-0 sm:pl-0 sm:mr-1">
         <h3 className = "text-2xl md:text-base">Professional Skills</h3>
         <GradientSVG/>
         <PSection />
