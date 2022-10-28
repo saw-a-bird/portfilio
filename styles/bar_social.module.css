@@ -60,3 +60,17 @@
 .nav #git a{
     background: #333;
 }
+
+.floatingBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+
+.nav svg {
+    font-size:2em;  /* 32px */
+    position:absolute;
+    top: 9px; /* 50px - 32x 18 */
+    left: 14px;
+}

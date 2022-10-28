@@ -1,13 +1,12 @@
-
-import jumpTo from './_jump';
+import { useState } from 'react';
+import ReactVisibilitySensor from 'react-visibility-sensor';
+import { CircularProgressbar } from 'react-circular-progressbar';
 import Info from '../public/json/personal_info.json'
 import sectionsCSS from '../styles/sections.module.css'
 import skillsetCSS from '../styles/skillset.module.css'
-import { useState } from 'react';
-import ReactVisibilitySensor from 'react-visibility-sensor';
-import { GradientSVG } from './GradientSVG';
-import { CircularProgressbar } from 'react-circular-progressbar';
-import EmblaCarousel from './EmbaCarousel.js';
+import jumpTo from './__jump';
+import EmblaCarousel from './_embaCarousel.js';
+import { GradientSVG } from './_gradientSVG';
 
 export const PageSection = (props) => (
       <section className="mt-[100vh] h-[100vh] flex content-center" id={ props.name.toLowerCase() } >

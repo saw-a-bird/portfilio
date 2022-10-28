@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import MainPage, { AboutPage, ProjectsPage, ServicesPage, SkillSetPage } from '../components/sections'
-import SocialMediaLinks from '../components/socialLinks'
+import SocialLinks from '../components/_socialLinks.js'
 
 export default function Home() {
   return (  
@@ -12,7 +12,7 @@ export default function Home() {
         <title>{siteTitle}</title>
          <link rel="icon" href="/favicon.ico" /> {/* CHANGE THIS */}
       </Head>
-      <SocialMediaLinks/>
+      <SocialLinks/>
       <MainPage />
       <AboutPage />
       <ServicesPage />

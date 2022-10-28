@@ -12,9 +12,9 @@
     "deploy": "gh-pages -d out"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.2.0",
-    "@fortawesome/free-brands-svg-icons": "^6.2.0",
-    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
+    "@material-ui/lab": "^4.0.0-alpha.61",
     "embla-carousel-react": "^7.0.3",
     "gsap": "^3.11.3",
     "jquery": "^3.6.1",
