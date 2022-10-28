@@ -8,7 +8,7 @@
     "toolset": {
       "personal": [
         {"name": "Work Ethic", "value": 100},
-        {"name": "Perfectionism", "value": 100},
+        {"name": "Perfectionism", "value": 80},
         {"name": "Listening", "value": 90},
         {"name": "Understanding", "value": 95},
         {"name": "Assertiveness", "value": 90},
@@ -54,6 +54,7 @@
             "name":"Spring-Boot", 
             "value":"good"
           },
+          
           {
             "name":"Angular", 
             "value":"good"
@@ -63,11 +64,15 @@
             "value":"good"
           },
           {
-            "name":"jQuery", 
+            "name":"Tailwind CSS", 
+            "value":"good"
+          },
+          {
+            "name":"JavaFX", 
             "value":"normal"
           },
           {
-            "name":"Tailwind CSS", 
+            "name":"jQuery", 
             "value":"normal"
           },
           {
@@ -114,12 +119,12 @@
       },
       {
         "title": "Commercial Management Application",
-        "description": "One day, I found that my father's shop is managed by an expensive application, which lacked a lot of fonctionalities. So for my second big project, I decided to create one myself.",
+        "description": "One day, I found that the shop I worked at was managed by an expensive application, which lacked a lot of fonctionalities. So I decided to create one myself.",
         "link": "git4.com"
       },
       {
         "title": "Novel Reader Website",
-        "description": "My favourite. Scrapes novels from boxnovel, saving them and allows the user to read his novels while saving his progress and allowing him to bookmark his favourite quotes.",
+        "description": "My favourite project. Scrapes novels from boxnovel, saving them and allows the user to read his novels while saving his progress and allowing him to bookmark his favourite quotes.",
         "link": "https://github.com/mahdi-abdelkebir/novel-reader-website-offline"
       },
       {
@@ -134,10 +139,13 @@
       },
       {
         "title": "Shop Organizer",
-        "description": "A tool I created because the shop I worked at, had too many products and I was simply overwhelmed and couldn't keep up.",
+        "description": "A tool created to organize a shop I worked at before.",
         "link": "https://github.com/mahdi-abdelkebir/shop-organizer"
+      },
+      {
+        "title": "Puissance4 ",
+        "description": "A game meant to be played by two. Created using JavaFX.",
+        "link": "https://github.com/mahdi-abdelkebir/puissance4"
       }
-
-     
     ]
 }

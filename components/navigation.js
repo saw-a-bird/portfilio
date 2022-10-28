@@ -9,9 +9,9 @@ export default function Navigation() {
 
     useEffect(() => {
         var tl = gsap.timeline();
-        tl.to(navCSS.logo, {y: 0, duration: 1});
+        // tl.to(navCSS.logo, {y: 0, duration: 1});
         tl.to("nav a", {y: 0, x:0, duration: 0.4, stagger:0.3});
-        tl.to(navCSS.sideIcons, {y:0, duration: 1});
+        // tl.to(navCSS.sideIcons, {y:0, duration: 1});
 
         $(window).on("scroll", function() {
             var scrollPos = $(window).scrollTop();
@@ -29,18 +29,12 @@ export default function Navigation() {
 
     return (
     <header className = {navCSS.header} ref={boxRef}>
-        {/* <div id = "logo" className={navCSS.logo}>
-            <img src="/imgs/apex-logo.png" alt="Apex Legends" />
-        </div> */}
-        <nav id = "nav-menu">
+        <nav id = "nav-menu" className = {navCSS.navMenu}>
             <a className={navCSS.menuLink + ' ' + navCSS.active} onClick={() => {jumpTo('#main')}}><span>START</span></a>
             <a className={navCSS.menuLink} onClick={() => {jumpTo('#about')}}><span>ABOUT</span></a>
             <a className={navCSS.menuLink} onClick={() => {jumpTo('#services')}}><span>SERVICES</span></a>
             <a className={navCSS.menuLink} onClick={() => {jumpTo('#skillset')}}><span>SKILLSET</span></a>
             <a className={navCSS.menuLink} onClick={() => {jumpTo('#projects')}}><span>PROJECTS</span></a>
         </nav>
-        {/* <div id = "sideIcons" className={navCSS.sideIcons}>
-            <img src="/imgs/icons.jpg" alt="icons" />
-        </div> */}
     </header>);
 }

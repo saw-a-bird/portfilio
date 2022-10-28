@@ -40,14 +40,6 @@
     font-size:20.5px
 }
 
-.c_item_link {
-    border-radius: 15px;
-    border:1px solid white;
-    padding: 1% 10%;
-    transition: font-size .25s;
-    font-size: 20px
-}
-
 /* Default */
 .page_section {
     margin: auto 15%;
@@ -58,14 +50,32 @@
     margin: auto 20%;
 }
 
+.page_section:has(.projectsSection) {
+    margin: auto;
+}
+
+.c_item_link {
+    border-radius: 15px;
+    border:1px solid white;
+    padding: 1% 10%;
+    transition: font-size .25s;
+    font-size: 20px
+}
+
 /* For Mobile */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 640px) {
     .page_section {
-        margin: auto 10px;
-        padding: 10%;
+        margin: auto 5px;
+        padding: 0;
     }
 
     .page_section:has(.aboutSection) {
         margin: auto ;
     }
+
+    .c_item_link {
+        font-size: 17px
+    }
+
+    
 }
