@@ -26,15 +26,12 @@
   text-align: center;
   background: #2e2e2e;
   background: linear-gradient(180deg, rgba(46, 46, 46, 0.8) 0%, rgba(46, 46, 46, 0.8) 71%, rgba(46, 46, 46, 0) 100%);
-  transform: skewX(45deg) translateY(-200px);
 }
 
 .menuLink:after {
   display: block;
   content: "";
   position: relative;
-  top: 30px;
-  height: 10px;
   width: 100%;
   background-color: #2f77ae
 }
@@ -48,9 +45,6 @@
 .menuLink span {
   display: block;
   position: relative;
-  top: 18px;
-  -webkit-transform: skewX(-45deg);
-  transform: skewX(-45deg);
 }
 
 .menuLink.active {
@@ -74,21 +68,36 @@
   background-color: #6cb2e9
 }
 
-/* Default */
-.header {
-  left: 20%;
-  right: 20%;
-  padding-left: 50px;
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .header {
+    width: 100%;
+    padding-right: 8px; 
+  }
+
+  .navMenu {
+    margin-top: -4px; 
+  }
+
+  .menuLink {
+    width: 20%;
+    height: 37px;
+    font-size: 12px;
+  }
+
+  .menuLink:after {
+    top: 8px;
+    height: 6px;
+  }
+
+  
+  .menuLink span {
+    top: 2px;
+  }
 }
 
-.menuLink {
-  width: 140px;
-  height: 75px;
-  font-size: 17px;
-}
-
-/* For Mobile */
-@media screen and (max-width: 768px) {
+/* Tablet */
+@media screen and (min-width: 768px) {
   .header {
     left: 10%;
     right: 10%;
@@ -96,8 +105,43 @@
   }
 
   .menuLink {
+    padding-left: 5px;
     width: 90px;
     height: 70px;
     font-size: 13px;
+    transform: skewX(45deg) translateY(-120px);
+  }
+
+  .menuLink span {
+    top: 18px;
+    -webkit-transform: skewX(-45deg);
+    transform: skewX(-45deg);
+  }
+
+  .menuLink:after {
+    top: 30px;
+    height: 10px;
+    display: block;
+    content: "";
+    position: relative;
+    top: 30px;
+    height: 10px;
+    width: 100%;
+    background-color: #2f77ae
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  .header {
+    left: 20%;
+    right: 20%;
+    padding-left: 50px;
+  }
+
+  .menuLink {
+    width: 140px;
+    height: 75px;
+    font-size: 17px;
   }
 }

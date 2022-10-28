@@ -1,19 +1,10 @@
 
-.legendScale span {
-    font-size: 80%;
-    line-height: 12px;
-    vertical-align: text-top;
-}
 
 .box {
     display: inline-block;
     height: 12px;
     width: 14px;
     border: 1px solid #999;
-}
-
-.scale {
-    margin-left: -4px;
 }
 
 .talents > div {
@@ -38,20 +29,35 @@
 }
 
 
-/* Default */
+/* Default: Mobile */
+.progressBox {
+    width:40%
+}
+
 .circleTitle {
-    font-size:initial;
+    font-size:10px;
+}
+
+.valueBox {
+    font-size:10px;
 }
 
 .skillTitle {
-    font-size: 17px;
+    font-size: 15px;
 }
 
-.progressBox {
-    width:25%
+.legendScale span {
+    font-size: 11px;
+    line-height: 12px;
+    vertical-align: text-top;
 }
-/* For Mobile */
-@media screen and (max-width: 768px) {
+
+.scale {
+    margin-left: -3px;
+}
+
+/* For Desktop and Tablet */
+@media screen and (min-width: 768px) {
     .circleTitle {
         font-size:10px;
     }
@@ -66,5 +72,25 @@
 
     .progressBox {
         width:33%
+    }
+
+    .legendScale span {
+        font-size: 80%;
+    }
+    
+    .scale {
+        margin-left: -4px;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+
+    .skillTitle {
+        font-size: 17px;
+    }
+
+    .progressBox {
+        width:25%
     }
 }
