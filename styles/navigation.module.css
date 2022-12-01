@@ -142,6 +142,7 @@
   .menuLink {
     width: 140px;
     height: 75px;
-    font-size: 17px;
+    font-size: 16px;
+    line-height: 26px;
   }
 }

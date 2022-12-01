@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
-import MainPage, { AboutPage, ProjectsPage, ServicesPage, SkillSetPage } from '../components/sections'
+import MainPage, { AboutPage, MotivationsPage, ProjectsPage, ServicesPage, SkillSetPage } from '../components/sections'
 import SocialLinks from '../components/_socialLinks.js'
 
 export default function Home() {
@@ -15,6 +15,7 @@ export default function Home() {
       <SocialLinks/>
       <MainPage />
       <AboutPage />
+      <MotivationsPage />
       <ServicesPage />
       <SkillSetPage />
       <ProjectsPage />

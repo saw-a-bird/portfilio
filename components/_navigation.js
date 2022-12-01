@@ -32,6 +32,7 @@ export default function Navigation() {
         <nav id = "nav-menu" className = {navCSS.navMenu}>
             <a className={navCSS.menuLink + ' ' + navCSS.active} onClick={() => {jumpTo('#main')}}><span>START</span></a>
             <a className={navCSS.menuLink} onClick={() => {jumpTo('#about')}}><span>ABOUT</span></a>
+            <a className={navCSS.menuLink} onClick={() => {jumpTo('#motivations')}}><span style = {{fontSize: '14px'}}>MOTIVATIONS</span></a>
             <a className={navCSS.menuLink} onClick={() => {jumpTo('#services')}}><span>SERVICES</span></a>
             <a className={navCSS.menuLink} onClick={() => {jumpTo('#skillset')}}><span>SKILLSET</span></a>
             <a className={navCSS.menuLink} onClick={() => {jumpTo('#projects')}}><span>PROJECTS</span></a>

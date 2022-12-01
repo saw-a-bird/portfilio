@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'GameOver';
+    src: url('/fonts/PressStart2P-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 .header {
     color: #5794c2;
@@ -31,14 +38,12 @@
     transition: background-color .5s;
 }
 
-.servicesList > div:hover, .c_item_link:hover {
+.servicesList > div:hover {
     background-color: #317bb4;
     color:black;
 }
 
-.c_item_link:hover {
-    font-size:20.5px
-}
+
 
 /* Default */
 .page_section {
@@ -54,12 +59,42 @@
     margin: auto;
 }
 
-.c_item_link {
+.c_item_link, .c_item_disabled_link {
     border-radius: 15px;
     border:1px solid white;
     padding: 1% 10%;
     transition: font-size .25s;
-    font-size: 20px
+    font-family: "GameOver";
+    font-size: 12px
+}
+
+.c_item_link:hover {
+    background-color: #317bb4;
+    color:black;
+    font-size:13px;
+}
+
+.c_item_disabled_link {
+    background-color: #202020;
+    color: grey;
+    cursor:default;
+}
+
+.c_tech {
+    display: flex;
+    flex-direction: row;
+    justify-content:center
+}
+
+.c_bottom_div {
+    height: fit-content;
+    width: 100%;
+}
+
+.c_item_btns_box {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
 }
 
 /* For Mobile */
@@ -76,6 +111,4 @@
     .c_item_link {
         font-size: 17px
     }
-
-    
 }
