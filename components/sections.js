@@ -57,6 +57,17 @@ export const AboutPage = () => (
     </PageSection>
 );
 
+export const MotivationsPage = () => (
+  <PageSection name="Motivations" paddingB = "-4">
+    <div className= {sectionsCSS.aboutSection}>
+      <h3 className="font-extrabold">
+      </h3>
+      <div className = "md:text-[14px]" dangerouslySetInnerHTML={{ __html: Info.motivations }}></div>
+    </div>
+  </PageSection>
+);
+
+
 export const ServicesPage = () => (
     <PageSection name="Services" children_classes = "w-full lg:w-3/3 mx-auto">
       <div className={sectionsCSS.servicesList + " flex flex-wrap text-white gap-10 justify-center sm:mt-14 mt-20"}>
@@ -190,7 +201,18 @@ export const ProjectsPage = () => (
             <div className="text-center p-10 flex justify-between flex-col" key={item.title}>
                 <h1 className = "md:text-xl text-2xl font-bold">{item.title}</h1>
                 <span className = "md:text-base md:my-10 my-5">{item.description}</span>
-                  <p className = {sectionsCSS.c_item_link + " mt-5"}><a href = {item.link}> View Project</a></p>
+                <div className = {sectionsCSS.c_bottom_div}>
+                  <div className = {sectionsCSS.c_tech+" "+skillsetCSS.talents+" flex flex-wrap gap-2 [&>div]:border [&>div]:border-white [&>div]:rounded-xl [&>div]:px-2"}>
+                    {Object.entries(item.technologies).map(([k, item]) => (
+                          <div key = {k} className = {skillsetCSS.valueBox}>{item}</div>
+                    ))}
+                  </div>
+                  <div className = {sectionsCSS.c_item_btns_box}>
+                    { item.website != undefined && <p className = {sectionsCSS.c_item_link + " mt-5"}><a href = {item.website}> Website</a></p>}
+                    <p className = {(item.source == false? sectionsCSS.c_item_disabled_link : sectionsCSS.c_item_link) + " " + "mt-5"}><a href = {item.source == false ? "#": item.source}> Source code</a></p>
+                  </div>
+                </div>
+
             </div>
           ))}
         </EmblaCarousel>
