@@ -146,7 +146,7 @@
         "title": "Daily voice summary",
         "description": "The application that I won a competition with. Created to reduce your daily scrolling. Depending on what you say, it'll make an API call and give you what you need.",
         "technologies": ["React Native", "Android"],
-        "source": "https://github.com/mahdi-abdelkebir/my_flutter_projects"
+        "source": "https://github.com/mahdi-abdelkebir/daily_voice"
       },
       {
         "title": "Weather website",
