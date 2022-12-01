@@ -150,7 +150,7 @@
       },
       {
         "title": "Weather website",
-        "description": "An exciting project, created using a NextJS. This was also my first interaction with React.",
+        "description": "Calls a weather API and designs an actual scenery of the current weather situation. Feel free to check it out!",
         "technologies": ["NextJS", "ParticleJS", "TailwindCSS"],
         "website": "https://mahdi-abdelkebir.github.io/weather/",
         "source": "https://github.com/mahdi-abdelkebir/weather"

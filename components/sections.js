@@ -32,10 +32,10 @@ const MainPage = () => (
             <h1 className="text-gradient md:text-2xl text-4xl ">
               Hi! I'm Mahdi Abdelkebir. 
             </h1>
-            <h2 className="text-gradient md:text-xl text-3xl ">
-              I'm a software developer.
+            <h2 className="text-gradient md:text-xl text-2xl ">
+              A student in computer systems development (DSI)
             </h2>
-            <h3 className="font-normal text-gradient hover:font-medium md:text-md text-xl mt-8">
+            <h3 className="font-normal text-gradient hover:font-medium md:text-md text-xl mt-8" >
               Scroll down for more details.
             </h3>
     
