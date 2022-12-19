@@ -109,6 +109,14 @@
     }
 
     .c_item_link {
-        font-size: 17px
+        font-size: 8px;
+    }
+
+    .c_item_btns_box {
+        gap: 5px
+    }
+
+    .c_item_disabled_link {
+        font-size: 8px;
     }
 }

@@ -12,10 +12,15 @@
     "deploy": "gh-pages -d out"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.1",
+    "@fortawesome/free-brands-svg-icons": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
     "@material-ui/lab": "^4.0.0-alpha.61",
     "embla-carousel-react": "^7.0.3",
+    "fortawesome": "^0.0.1-security",
     "gsap": "^3.11.3",
     "jquery": "^3.6.1",
     "jump.js": "^1.0.2",

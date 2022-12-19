@@ -8,6 +8,8 @@ import jumpTo from './__jump';
 import EmblaCarousel from './_embaCarousel.js';
 import { GradientSVG } from './_gradientSVG';
 
+// certifications + achievements + professional experiences + blog + email professionel + lettre de motivation
+
 export const PageSection = (props) => (
       <section className="mt-[100vh] h-[100vh] flex content-center" id={ props.name.toLowerCase() } >
           <div className = {`bg-black/[.6] h-fit my-auto ${sectionsCSS.page_section} w-full py-5 ${props.paddingB != null? "pb-"+props.paddingB: ""} font-mono text-white text-xl`}>
@@ -192,6 +194,26 @@ export const SkillSetPage = () => {
     </PageSection>);
 }
 
+export const CertificationsPage = () => (
+  <PageSection name="Certifications" children_classes = "w-full lg:w-3/3 mt-5">
+  <div className= {sectionsCSS.projectsSection}>
+    <EmblaCarousel length = {Info.certifications.length}>
+      {Info.certifications.map(item => (
+        <div className="text-center p-10 flex justify-between flex-col" key={item.title}>
+            <h1 className = "md:text-xl text-2xl font-bold">{item.title}</h1>
+            <span className = "md:text-base md:my-10 my-5">{item.description}</span>
+            <div className = {sectionsCSS.c_bottom_div}>
+              <div className = {sectionsCSS.c_item_btns_box}>
+                { item.proof != undefined && <p className = {sectionsCSS.c_item_link + " mt-5"}><a href = {item.proof}> Proof</a></p>}
+              </div>
+            </div>
+
+        </div>
+      ))}
+    </EmblaCarousel>
+  </div>
+</PageSection>
+);
 
 export const ProjectsPage = () => (
     <PageSection name="Projects" children_classes = "w-full lg:w-3/3 mt-5">
