@@ -1,0 +1,126 @@
+
+.container {
+    z-index: 20;
+    position: fixed;
+    bottom: 30px;
+    right: 35px;
+    transition: all .3s linear;
+    box-shadow: 2px 2px 8px 0px rgba(0,0,0,.4);
+    background: #bf4d28;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        position: fixed;
+        bottom: 30px;
+        left: 30px;
+        right: initial;
+    }
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 12px 10px;
+    border: 0;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: all 1.2s ease-in-out;
+
+}
+
+.button svg {
+    font-size:26px;
+    width:30px
+}
+
+
+.button:hover {
+    -webkit-animation: pulse 0.2s 2 both;
+            animation: pulse 0.2s 2 both;
+}
+
+.button.loading svg {
+    -webkit-animation: loading 2s infinite linear;
+            animation: loading 2s infinite linear;        
+}
+
+@-webkit-keyframes loading {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(359deg);
+}
+}
+
+@keyframes loading {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(359deg);
+}
+}
+
+/* 
+.button.success {
+    border-radius: 50%;
+    background: #80bca3;
+}
+
+.button.success svg::after {
+    content: "\f00c";
+    color: transparent;
+    -webkit-animation: change-icon 1s 0.6s linear both;
+            animation: change-icon 1s 0.6s linear both;
+    }
+
+@-webkit-keyframes change-icon {
+0% {
+    color: transparent;
+}
+
+100% {
+    color: #fff;
+}
+}
+
+@keyframes change-icon {
+    0% {
+        color: transparent;
+    }
+
+    100% {
+        color: #fff;
+    }
+} */
+
+@-webkit-keyframes pulse {
+from {
+    transform: scale3d(1, 1, 1);
+}
+
+50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+}
+
+to {
+    transform: scale3d(1, 1, 1);
+}
+}
+
+@keyframes pulse {
+from {
+    transform: scale3d(1, 1, 1);
+}
+
+50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+}
+
+to {
+    transform: scale3d(1, 1, 1);
+}
+}
+
