@@ -11,7 +11,7 @@ import { ContactMail, Facebook, GitHub, LinkedIn } from "@material-ui/icons";
 const actions = [
   { id: barCSS.fb, label: "Facebook", icon: <Facebook />, link: Info.links.fb , width: 'w-5', color: "#4267B2"},
   { id: barCSS.linkedin, label: "LinkedIn",icon: <LinkedIn />, link: Info.links.linkedin , width: 'w-6', color: "#2867B2"},
-  { id: barCSS.git, label: "Github",icon: <GitHub />, link: Info.links.git, width: 'w-7', color: "#333"}
+  { id: barCSS.git, label: "Github",icon: <GitHub />, link: Info.links.github, width: 'w-7', color: "#333"}
 ];
 
 
