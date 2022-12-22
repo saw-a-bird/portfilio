@@ -13,9 +13,8 @@
 @media screen and (max-width: 768px) {
     .container {
         position: fixed;
-        bottom: 30px;
-        left: 30px;
-        right: initial;
+        bottom: 25px;
+        right: 90px;
     }
 }
 

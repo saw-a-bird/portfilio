@@ -1,0 +1,108 @@
+{
+    "main": {
+      "introduction":"Hi! I'm Mahdi Abdelkebir.",
+      "description": "A student in computer systems development (DSI)",
+      "scroll": "Scroll down for more details."
+    },
+    "about": {
+      "hello": "Hello",
+      "content": "<p> I'd say I'm highly motivated, dynamic, persevering, patient, rigorous and passionate with everything that comes along with programming. </p> <br/> <p> No matter the teamwork project I work on, I'm mostly in the backend side, but my friends say I'm not bad at design. Although lacking a bit of experience, I participated in various projects about different topics especially commerce, and on good terms with many different types of people.</p>"
+    },
+    "motivations": "<p> Nowadays, the IT sector is booming. Exciting times are ahead of us, as long as you are even slightly talented, you'll be respected in society with a relatively high salary.</p><br/><p>  I really love this industry, especially the field of machine learning, it have a LOT of potential to unearth, so I'm really excited for the future.</p>",
+    "services": [
+      "UI Design",
+      "Web Development",
+      "Desktop App Development",
+      "Mobile App Development"
+    ],
+    "qualities": {
+      "WorkEthic": "Work Ethic",
+      "Professionalism": "Professionalism",
+      "Meticulousness": "Meticulousness",
+      "Communication": "Communication",
+      "Understanding": "Understanding"
+    },
+    "certifications" : [
+      {
+        "title": "C1",
+        "description": "c1",
+        "proof": "https://github.com/mahdi-abdelkebir/Person_Recognizer_By_Voice"
+      }
+    ],
+    "projects" : [
+      {
+        "title": "Person recognizer by voice",
+        "description": "A project that I made on machine learning. You record your voice, it remembers it and whenever you speak later, it'll recognize you. Actually, it's much more complicated than that.",
+        "technologies": ["Python", "Tensorflow", "PySimpleGUI", "Librosa"],
+        "source": "https://github.com/mahdi-abdelkebir/Person_Recognizer_By_Voice"
+      },
+      {
+        "title": "Daily voice summary",
+        "description": "The application that I won a competition with. Created to reduce your daily scrolling in the internet. Depending on what you say, it'll make an API call and give you what you need.",
+        "technologies": ["React Native", "Android"],
+        "source": "https://github.com/mahdi-abdelkebir/daily_voice"
+      },
+      {
+        "title": "Weather website",
+        "description": "Calls a weather servvice and designs an actual scenery of the current weather situation. Feel free to check it out!",
+        "technologies": ["NextJS", "ParticleJS", "TailwindCSS"],
+        "website": "https://mahdi-abdelkebir.github.io/weather/",
+        "source": "https://github.com/mahdi-abdelkebir/weather"
+      },
+      {
+        "title": "My portfolio",
+        "description": "An exciting project, created using NextJS. This was also my first interaction with React.",
+        "technologies": ["NextJS", "ParticleJS", "TailwindCSS"],
+        "website": "https://mahdi-abdelkebir.github.io/portfilio/",
+        "source": "https://github.com/mahdi-abdelkebir/portfilio"
+      },
+      {
+        "title": "Flutter Projects",
+        "description": "All my small flutter projects",
+        "technologies": ["Flutter"],
+        "source": "https://github.com/mahdi-abdelkebir/my_flutter_projects"
+      },
+      {
+        "title": "Certifications website",
+        "description": "Takes certification exams PDFs of the website gratisexam and provides a way to take the test online.",
+        "technologies": ["Symfony", "MySQL"],
+        "source": "https://github.com/mahdi-abdelkebir/certifications_online"
+      },
+      {
+        "title": "E-commerce website",
+        "description": "For my first internship project, my superviser proposed to me to create a commercial website for him to sell the society's products online for bigger customer base.",
+        "technologies": ["HTML", "CSS", "PHP", "MySQL"],
+        "source": "https://github.com/mahdi-abdelkebir/ecommerce_toolshop_php"
+      },
+      {
+        "title": "Novel Reader website",
+        "description": "This is my favourite project. It'll take novels from another site 'boxnovel', saves them offline and allows the user to read his novels while keeping track of his progress, moreover, allowing him to bookmark his favourite quotes.",
+        "technologies": ["Angular", "Springboot", "Postgres"],
+        "source": "https://github.com/mahdi-abdelkebir/novel-reader-website-offline"
+      },
+      {
+        "title": "Glossary",
+        "description": "A website, created with the aim of organizing what I learned by #tags. The website was meant to be my personal blog and glossary, so I used Firebase as the database. It's still unfinished but I'll complete it later.",
+        "technologies": ["Firebase", "Angular"],
+        "source": "https://github.com/mahdi-abdelkebir/glossary"
+      },
+      {
+        "title": "Commercial Management application",
+        "description": "For my second internship project, I noticed that the company store was run by an expensive commercial application, which lacked many features. So I proposed to my supervisor to allow me to create a better application myself. No source code.",
+        "technologies": ["VB.NET", "MySQL"], 
+        "source": false
+      },
+      {
+        "title": "Shop Organizer",
+        "description": "As a side project, I once wanted to create an application to organize the merchandise of a shop I previously worked at.",
+        "technologies": ["VB.NET", "MySQL"],
+        "source": "https://github.com/mahdi-abdelkebir/shop-organizer"
+      },
+      {
+        "title": "Puissance4",
+        "description": "Our class teacher wanted us to create our own proper version of the game Puissance 4, using JavaFX. So, I invested my time to excel. The game can be played by two.",
+        "technologies": ["JavaFX", "MySQL"],
+        "source": "https://github.com/mahdi-abdelkebir/puissance4_javafx"
+      }
+    ]
+}

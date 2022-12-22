@@ -1,0 +1,27 @@
+{   
+    "page_titles": {
+        "home": "Mahdi Abdelkebir - My portfolio."
+    },
+    "extra": {
+        "language": {
+            "key": "Language"
+        },
+        "downloadPdf": "The printable PDF format version",
+        "source": "Source code",
+        "website": "Website",
+        "technologies": {
+            "titles": {
+                "PersonalSkills": "Personal Skills",
+                "ProfessionalSkills": "Professional Skills",
+                "Languages": "Languages",
+                "Frameworks": "Frameworks",
+                "Other": "Other technologies"
+            },
+            "scales": {
+                "excellent": "Excellent",
+                "good": "Good",
+                "basic": "Basic"
+            }
+        }
+    }
+}

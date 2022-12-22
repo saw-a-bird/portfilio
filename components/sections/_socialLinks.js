@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Info from '../public/json/personal_info.json';
+import Info from '../../public/json/details.json';
 // import {  faContao, faFacebookF , faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
-import barCSS from '../styles/bar_social.module.css'
+import barCSS from '../../styles/bar_social.module.css'
 // import socialCSS from '../styles/floating_social.module.css'
 import { SpeedDial, SpeedDialAction, SpeedDialIcon } from "@material-ui/lab";
 import { ContactMail, Facebook, GitHub, LinkedIn } from "@material-ui/icons";

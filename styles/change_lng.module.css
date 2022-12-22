@@ -1,0 +1,9 @@
+.container {
+    z-index: 20;
+    position: fixed;
+    bottom: 30px;
+    left: 20px;
+    transition: all .3s linear;
+    box-shadow: 2px 2px 8px 0px rgba(0,0,0,.4);
+    border-radius: 5px;
+}
