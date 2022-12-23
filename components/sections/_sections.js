@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import ReactVisibilitySensor from 'react-visibility-sensor';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import sectionsCSS from '../../styles/sections.module.css'
@@ -6,18 +6,14 @@ import skillsetCSS from '../../styles/skillset.module.css'
 import jumpTo from '../jump';
 import EmblaCarousel from '../embaCarousel';
 import { GradientSVG } from '../gradientSVG';
-import { withTranslation } from "../../next-i18next.config.js"
 import Details from '../../public/json/details.json'
-import { useTranslation } from 'react-i18next';
 // certifications + achievements + professional experiences + blog + email professionel + lettre de motivation
 
 export const PageSection = (props) => {
-    const { t } = useTranslation('navigation');
-
     return(<section className="mt-[100vh] h-[100vh] flex content-center" id={ props.name } >
         <div className = {`bg-black/[.6] h-fit my-auto ${sectionsCSS.page_section} w-full py-5 ${props.paddingB != null? "pb-"+props.paddingB: ""} font-mono text-white text-xl`}>
             <h2 className={ ` ${sectionsCSS.blinking} ${sectionsCSS.header} text-6xl md:text-4xl font-extrabold mb-8 text-center `}>
-                {t(props.name)}
+                {props.t("navigation."+props.name)}
             </h2>
 
             <div className={ props.children_classes != undefined? props.children_classes : "w-2/3 sm:w-5/6 mx-auto" }>
@@ -27,9 +23,7 @@ export const PageSection = (props) => {
     </section>)
 };
 
-const MainPage = () => { 
-    const { t } = useTranslation('personal_info', { keyPrefix: 'main' });
-
+const MainPage = ({t}) => {
     return( <section id = "main" className="h-screen">
         <div className="h-full rounded-3xl bg-base-300 shadow-[0_0_5px_4px_rgba(10,10,10,0.3)] flex justify-center items-center text-center color-white p-8 cursor-pointer select-none"
         onClick={() => {jumpTo('#about')}}>
@@ -37,13 +31,13 @@ const MainPage = () => {
           <div className={`font-bold text-gradient bg-gradient-to-tl from-green-100 via-white to-gray-400 animate-gradient-x ${sectionsCSS.blinking}`}>
     
             <h1 className="text-gradient md:text-2xl text-4xl ">
-              {t("introduction")}
+              {t("personal_info.main.introduction")}
             </h1>
             <h2 className="text-gradient md:text-xl text-2xl ">
-              {t("description")}
+              {t("personal_info.main.description")}
             </h2>
             <h3 className="font-normal text-gradient hover:font-medium md:text-md text-xl mt-8" >
-              {t("scroll")}
+              {t("personal_info.main.scroll")}
             </h3>
           </div>
         </div>
@@ -52,69 +46,43 @@ const MainPage = () => {
 
 export default MainPage;
 
-export const AboutPage = () => {
-  const { t, i18n, ready  } = useTranslation('personal_info', { keyPrefix: 'about', useSuspense: false });
+export const AboutPage = ({t}) => {
 
-  if (ready) {
-    return (<PageSection name="about" paddingB = "-4">
-      <div className= {sectionsCSS.aboutSection}>
-        <h3 className='font-extrabold'>{t("hello")}, </h3>
-        <div className = "md:text-[14px]" dangerouslySetInnerHTML={{ __html: t("content") }}></div>
-      </div>
-    </PageSection>)
-  } else {
-  return (<PageSection name="about" paddingB = "-4">
-      <div className= {sectionsCSS.aboutSection}>
-        <h3 className='font-extrabold'>Loading... </h3>
-      </div>
-    </PageSection>);
-  }
+  return (<PageSection name="about" paddingB = "-4" t = {t}>
+    <div className= {sectionsCSS.aboutSection}>
+      <h3 className='font-extrabold'>{t("personal_info.about.hello")}, </h3>
+      <div className = "md:text-[14px]" dangerouslySetInnerHTML={{ __html: t("personal_info.about.content") }}></div>
+    </div>
+  </PageSection>)
   
 }
 
-export const MotivationsPage = () => {
-  const { t, i18n, ready  } = useTranslation('personal_info', { useSuspense: false });
+export const MotivationsPage = ({t}) => {
   
-  if (ready) {
-    return (<PageSection name="motivations" paddingB = "-4">
+    return (<PageSection name="motivations" paddingB = "-4" t = {t}>
     <div className= {sectionsCSS.aboutSection}>
       <h3 className="font-extrabold"> </h3>
-      <div className = "md:text-[14px]" dangerouslySetInnerHTML={{ __html: t("motivations") }}></div>
+      <div className = "md:text-[14px]" dangerouslySetInnerHTML={{ __html: t("personal_info.motivations") }}></div>
     </div>
   </PageSection>);
-  } else {
-  return (<PageSection name="motivations" paddingB = "-4">
-      <div className= {sectionsCSS.aboutSection}>
-        <h3 className='font-extrabold'>Loading... </h3>
-      </div>
-    </PageSection>);
-  }
 };
 
 
-export const ServicesPage = () => {
-  const { t, i18n, ready  } = useTranslation('personal_info', { useSuspense: false });
-  
-  if (ready)
-    return (<PageSection name="services" children_classes = "w-full lg:w-3/3 mx-auto">
+export const ServicesPage = ({t}) => {
+    return (<PageSection name="services" children_classes = "w-full lg:w-3/3 mx-auto" t = {t}>
       <div className={sectionsCSS.servicesList + " flex flex-wrap text-white gap-10 justify-center sm:mt-14 mt-20"}>
-      {t("services", { returnObjects: true }).map((item, i) => (
+      {t("personal_info.services").map((item, i) => (
         <div key = {i} className = "border border-white rounded-xl bg-slate-800/25 sm:p-5 p-10 flex items-center">
           <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' strokeWidth='1.5' stroke='currentColor' className='w-6 h-6 mr-3' dangerouslySetInnerHTML={{ __html: Details.services_icons[i] }}></svg>
           <h1 className = "text-[15px]" > {item} </h1>
         </div>
       ))}
       </div>
-  </PageSection>) 
-  else 
-    return (<PageSection name="services" children_classes = "w-full lg:w-3/3 mx-auto">
-        <h3 className='font-extrabold'>Loading... </h3>
-    </PageSection>);
+  </PageSection>)
 }
 
 
-export const SkillSetPage = () => {
-  const { t, i18n, ready  } = useTranslation(['personal_info', "common"], { useSuspense: false });
+export const SkillSetPage = ({t}) => {
 
   function PersonalSkills() {
     var scales ={
@@ -204,21 +172,15 @@ export const SkillSetPage = () => {
       </div>);
   }
 
-  if (ready)
     return (
-      <PageSection name="skillset" paddingB="0" children_classes = "w-full lg:w-3/3 mx-auto flex justify-between pt-1">
+      <PageSection name="skillset" paddingB="0" children_classes = "w-full lg:w-3/3 mx-auto flex justify-between pt-1" t = {t}>
           <PersonalSkills />
           <ProfessionalSkills />
       </PageSection>);
-  else 
-  return (
-    <PageSection name="skillset" paddingB="0" children_classes = "w-full lg:w-3/3 mx-auto flex justify-between pt-1">
-      <h3 className='font-extrabold'>Loading... </h3>
-    </PageSection>);
 };
 
 export const CertificationsPage = () => (
-  <PageSection name="certifications" children_classes = "w-full lg:w-3/3 mt-5">
+  <PageSection name="certifications" children_classes = "w-full lg:w-3/3 mt-5" t = {t}>
   <div className= {sectionsCSS.projectsSection}>
     <EmblaCarousel length = {Info.certifications.length}>
       {Info.certifications.map(item => (
@@ -238,12 +200,10 @@ export const CertificationsPage = () => (
 </PageSection>
 );
 
-export const ProjectsPage = () => {
-    const { t, i18n, ready  } = useTranslation(['personal_info', 'common'], { useSuspense: false });
+export const ProjectsPage = ({t}) => {
 
-    if (ready) {
-      var projects  = t('personal_info.projects', { returnObjects: true });
-      return(<PageSection name="projects" children_classes = "w-full lg:w-3/3 mt-5">
+      var projects  = t('personal_info.projects');
+      return(<PageSection name="projects" children_classes = "w-full lg:w-3/3 mt-5" t = {t}>
         <div className= {sectionsCSS.projectsSection}>
           <EmblaCarousel length = {projects.length}>
             {projects.map(item => (
@@ -266,10 +226,5 @@ export const ProjectsPage = () => {
             ))}
           </EmblaCarousel>
         </div>
-      </PageSection>);
-    } else 
-    return (
-      <PageSection name="projects" children_classes = "w-full lg:w-3/3 mt-5">
-        <h3 className='font-extrabold'>Loading... </h3>
       </PageSection>);
 };

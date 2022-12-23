@@ -1,0 +1,146 @@
+{
+    "i18n": {
+      "common": {
+        "page_titles": {
+          "home": "Mahdi Abdelkebir - Mon portfolio."
+        },
+        "extra": {
+            "language": "Langue",
+            "downloadPdf": "La version imprimable au format PDF",
+            "source": "Code source",
+            "website": "Site web",
+            "technologies": {
+                "titles": {
+                    "PersonalSkills": "Compétences Personnelles",
+                    "ProfessionalSkills": "Compétences Professionnelles",
+                    "Languages": "Langages",
+                    "Frameworks": "Frameworks",
+                    "Other": "Autre technologies"
+                },
+                "scales": {
+                    "excellent": "Excellent",
+                    "good": "Bon",
+                    "basic": "Basic"
+                }
+            }
+        }
+      },
+      "navigation": {
+        "start": "Début",
+        "about": "About me",
+        "motivations": "Motivations",
+        "services": "Services",
+        "skillset": "Compétences",
+        "certifications": "Certifications",
+        "projects": "Projets"
+      },
+      "personal_info": {
+        "main": {
+          "introduction":"Bonjour! Je suis Mahdi Abdelkebir.",
+          "description": "Étudiant en développement de systèmes informatiques (DSI)",
+          "scroll": "Voir plus bas pour les détails"
+        },
+        "about": {
+          "hello": "Bonjour",
+          "content": "<p> Je suis très motivé, dynamique, patient, rigoureux, passionné par tout ce qui accompagne la programmation. </p> <br/> <p> Dans tout projet d'équipe, je suis principallement dans la back-end mais mes amis disent que je ne suis pas mauvais en design. <br/> <br/> Bien que manquant un peu d'expérience, j'ai participé à divers projets sur différents sujets, notamment le commerce, et je suis devenu en bons termes avec de nombreux types de personnes.</p>"
+        },
+        "motivations": "<p>De nos jours, le secteur informatique est en plein essor et évolue comme un train qui ne peut être arrêté. Tant que vous avez du talent, vous serez respecté dans la société avec un salaire relativement élevé.</p> <br/> <p> J'aime vraiment cette industrie, en particulier le domaine de l'intelligence artificielle, elle a beaucoup de potentiel à découvrir et changera très probablement tout ce que nous savions auparavant, donc je suis vraiment excité pour l'avenir.</p>",
+        "services": [
+          "Conception de l'interface utilisateur",
+          "Développement de site web HTML",
+          "Développement d'applications de desktop EXE",
+          "Développement d'applications mobiles APK"
+        ],
+        "qualities": {
+          "WorkEthic": "Diligence",
+          "Professionalism": "Professionalisme",
+          "Meticulousness": "Méticulosité",
+          "Communication": "Communication",
+          "Understanding": "Comprehension"
+      },
+      "certifications" : [
+        {
+          "title": "C1",
+          "description": "c1",
+          "proof": "https://github.com/mahdi-abdelkebir/Person_Recognizer_By_Voice"
+        }
+      ],
+      "projects" : [
+        {
+          "title": "Reconnaître les gens par voix",
+          "description": "Utilise le machine learning. Vous enregistrez votre voix, il s'en souvient et chaque fois que vous parlez plus tard, il essaiera de vous reconnaître.",
+          "technologies": ["Python", "Tensorflow", "PySimpleGUI", "Librosa"],
+          "source": "https://github.com/mahdi-abdelkebir/Person_Recognizer_By_Voice"
+        },
+        {
+          "title": "Daily voice summary",
+          "description": "L'application avec laquelle j'ai gagné un concours. Créée pour réduire votre temps sur Internet et augmenter la productivité. En fonction de ce que vous dites, elle fera un appel API et vous donnera ce dont vous avez besoin.",
+          "technologies": ["React Native", "Android"],
+          "source": "https://github.com/mahdi-abdelkebir/daily_voice"
+        },
+        {
+          "title": "Weather website",
+          "description": "Appelle un service météorologique et conçoit un paysage réel de la situation météorologique actuelle. N'hésitez pas à y jeter un œil!",
+          "technologies": ["NextJS", "ParticleJS", "TailwindCSS", "OpenWeather"],
+          "website": "https://mahdi-abdelkebir.github.io/weather/",
+          "source": "https://github.com/mahdi-abdelkebir/weather"
+        },
+        {
+          "title": "Mon portfolio",
+          "description": "Un projet passionnant, créé à l'aide de NextJS. C'était aussi ma première interaction avec React.",
+          "technologies": ["NextJS", "ParticleJS", "TailwindCSS"],
+          "website": "https://mahdi-abdelkebir.github.io/portfilio/",
+          "source": "https://github.com/mahdi-abdelkebir/portfilio"
+        },
+        {
+          "title": "Flutter Projects",
+          "description": "Tous mes petits projets flottants",
+          "technologies": ["Flutter"],
+          "source": "https://github.com/mahdi-abdelkebir/my_flutter_projects"
+        },
+        {
+          "title": "Certifications website",
+          "description": "Prend les examens de certification PDF du site 'gratisexam' et fournit un moyen de passer le test en ligne.",
+          "technologies": ["Symfony", "MySQL"],
+          "source": "https://github.com/mahdi-abdelkebir/certifications_online"
+        },
+        {
+          "title": "E-commerce website",
+          "description": "Pour mon premier projet de stage, mon encadrant m'a proposé de lui créer un site marchand pour vendre en ligne les produits de la société à une clientèle plus large.",
+          "technologies": ["HTML", "CSS", "PHP", "MySQL"],
+          "source": "https://github.com/mahdi-abdelkebir/ecommerce_toolshop_php"
+        },
+        {
+          "title": "Novel Reader website",
+          "description": "C'est mon projet préféré. Il prendra des romans d'un autre site 'boxnovel', les enregistrera hors ligne et permettra à l'utilisateur de lire ses romans tout en gardant une trace de ses progrès, lui permettant en outre de marquer ses citations préférées.",
+          "technologies": ["Angular", "Springboot", "Postgres"],
+          "source": "https://github.com/mahdi-abdelkebir/novel-reader-website-offline"
+        },
+        {
+          "title": "Glossary",
+          "description": "Un site web, créé dans le but d'organiser ce que j'ai appris par des #tags. Le site Web était censé être mon blog personnel et mon glossaire, j'ai donc utilisé Firebase comme base de données. It's still unfinished mais je le compléterai plus tard.",
+          "technologies": ["Firebase", "Angular"],
+          "source": "https://github.com/mahdi-abdelkebir/glossary"
+        },
+        {
+          "title": "Commercial Management application",
+          "description": "Pour mon deuxième projet de stage, j'ai remarqué que le magasin de l'entreprise était géré par une application commerciale coûteuse, qui manquait de nombreuses fonctionnalités. J'ai donc proposé à mon superviseur de me permettre de créer moi-même une meilleure application. Aucun code source.",
+          "technologies": ["VB.NET", "MySQL"],
+          "source": false
+        },
+        {
+          "title": "Shop Organizer",
+          "description": "En tant que projet parallèle, j'ai un jour voulu créer une application pour organiser la marchandise d'un magasin dans lequel j'ai travaillé auparavant.",
+          "technologies": ["VB.NET", "MySQL"],
+          "source": "https://github.com/mahdi-abdelkebir/shop-organizer"
+        },
+        {
+          "title": "Puissance4",
+          "description": "Notre professeur de classe voulait que nous créions notre propre version du jeu Puissance 4, en utilisant JavaFX. Alors, j'ai investi mon temps pour exceller. Le jeu peut se jouer à deux.",
+          "technologies": ["JavaFX", "MySQL"],
+          "source": "https://github.com/mahdi-abdelkebir/puissance4_javafx"
+        }
+      ]
+      }
+    }
+  }

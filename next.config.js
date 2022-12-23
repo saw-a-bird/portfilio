@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const isProd = process.env.NODE_ENV === "production";
-const { i18n } = require('./next-i18next.config.js')
 
 module.exports = {
   /**
@@ -13,7 +12,6 @@ module.exports = {
    *
    * @see https://nextjs.org/blog/next-12-3#disable-image-optimization-stable
    */
-  i18n,
   images: {
     unoptimized: true,
   },
