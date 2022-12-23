@@ -24,7 +24,7 @@ function DownloadLink() {
           
           /* Set delay before switching from loading to success. */
           window.setTimeout(function() {
-            var win = window.open('static/CV.pdf', '_blank', 'fullscreen=yes');
+            var win = window.open('CV.pdf', '_blank', 'fullscreen=yes');
             win.document.title = "Mahdi Abdelkebir - CV"
             downloadButton.classList.remove(downloadcss.loading);
             setIcon(faFilePdf);

@@ -6,7 +6,7 @@
         },
         "extra": {
             "language": "Language",
-            "downloadPdf": "The printable PDF format version",
+            "downloadPdf": "The printable PDF format version (French only)",
             "source": "Source code",
             "website": "Website",
             "technologies": {
