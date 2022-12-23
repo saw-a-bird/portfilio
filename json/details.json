@@ -1,0 +1,149 @@
+{
+    "links" : {
+      "fb": "https://www.facebook.com/mehdi.abdelkebr/",
+      "linkedin" : "https://www.linkedin.com/in/mahdi-abdelkebir",
+      "github": "https://github.com/mahdi-abdelkebir"
+    },
+    "services_icons": [
+      "<path strokeLinecap='round' strokeLinejoin='round' d='M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z' />",
+      "<path strokeLinecap='round' strokeLinejoin='round' d='M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5' />",
+      "<path strokeLinecap='round' strokeLinejoin='round' d='M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25' />",
+      "<path strokeLinecap='round' strokeLinejoin='round' d='M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3' />"
+    ],
+    "toolset": {
+      "personal": [
+        {"name": "WorkEthic", "value": 100},
+        {"name": "Professionalism", "value": 100},
+        {"name": "Meticulousness", "value": 95},
+        {"name": "Communication", "value": 90},
+        {"name": "Understanding", "value": 95}
+      ],
+      
+      "technologies": {
+        "Languages": [
+          {
+            "name":"Java", 
+            "value":"excellent"
+          }, 
+          {
+            "name":"CSS", 
+            "value":"excellent"
+          },
+          {
+            "name":"Python", 
+            "value":"excellent"
+          },
+          {
+            "name":"HTML", 
+            "value":"excellent"
+          },
+          {
+            "name":"JavaScript", 
+            "value":"excellent"
+          },
+          {
+            "name":"PHP", 
+            "value":"excellent"
+          },
+          {
+            "name":"C#", 
+            "value":"excellent"
+          },
+          {
+            "name":"SQL", 
+            "value":"excellent"
+          },
+          {
+            "name":"VB.NET", 
+            "value":"good"
+          }
+        ],
+        "Frameworks": [
+          {
+            "name":"Spring-Boot", 
+            "value":"excellent"
+          },
+          {
+            "name":"Angular", 
+            "value":"excellent"
+          },
+          {
+            "name":"React Native", 
+            "value":"excellent"
+          },
+          {
+            "name":"Flutter", 
+            "value":"excellent"
+          },
+          {
+            "name":"Symfony", 
+            "value":"excellent"
+          },
+          {
+            "name":"Tailwind CSS", 
+            "value":"excellent"
+          },
+          {
+            "name":"JavaFX", 
+            "value":"good"
+          },
+          {
+            "name":"jQuery", 
+            "value":"good"
+          },
+          {
+            "name":"UIKit CSS", 
+            "value":"good"
+          },
+          {
+            "name":"Android SDK", 
+            "value":"good"
+          },
+          {
+            "name":"Nextjs", 
+            "value":"good"
+          },
+          {
+            "name":"Tensorflow", 
+            "value":"good"
+          },
+          {
+            "name":"React", 
+            "value":"good"
+          }],
+        "Other": [
+          
+          {
+            "name":"GIT", 
+            "value":"excellent"
+          },
+          {
+            "name":"MySQL", 
+            "value":"excellent"
+          },
+          {
+            "name":"Hadoop", 
+            "value":"good"
+          },
+          {
+            "name":"Redis", 
+            "value":"good"
+          },
+          {
+            "name":"MongoDB", 
+            "value":"good"
+          },
+          {
+            "name":"Postgres", 
+            "value":"basic"
+          }]
+      }
+    },
+    "certifications" : [
+      {
+        "title": "C1",
+        "description": "c1",
+        "proof": "https://github.com/mahdi-abdelkebir/Person_Recognizer_By_Voice"
+      }
+    ]
+}
