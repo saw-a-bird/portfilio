@@ -6,7 +6,7 @@
         },
         "extra": {
             "language": "Langue",
-            "downloadPdf": "La version imprimable au format PDF",
+            "downloadPdf": "La version imprimable au format PDF (Seulement français)",
             "source": "Code source",
             "website": "Site web",
             "technologies": {
