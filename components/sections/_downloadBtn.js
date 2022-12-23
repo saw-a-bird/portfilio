@@ -3,14 +3,13 @@ import downloadcss from '../../styles/download_btn.module.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "@fortawesome/fontawesome-svg-core/styles.css"
 import { faFilePdf, faSpinner } from '@fortawesome/free-solid-svg-icons'
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-export-i18n";
 
 
 function DownloadLink() {
-  const { t , i18n, ready} = useTranslation('common', { keyPrefix: 'extra', useSuspense: true });
+  const { t } = useTranslation();
   // const [isMobile, setIsMobile] = useState(false)
   const [currentIcon, setIcon] = useState(faFilePdf);
-  const [title, setTitle] = useState("Loading...");
 
   useEffect(() => {
     let downloadButton = document.querySelector('.'+downloadcss.button);
@@ -36,10 +35,6 @@ function DownloadLink() {
     };
   })
 
-  useEffect(() => {
-    setTitle(t("downloadPdf"))
-  }, [t("downloadPdf")])
-
   // create an event listener
   // useEffect(() => {
   //   function handleResize() {
@@ -55,7 +50,7 @@ function DownloadLink() {
 
   
   return (
-  <div title ={title} className={downloadcss.container}>
+  <div title ={t("common.extra.downloadPdf")} className={downloadcss.container}>
     <a href="#" className={downloadcss.button}>
       <FontAwesomeIcon icon={currentIcon} color="#fff" />
     </a>

@@ -3,12 +3,11 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import $ from "jquery"
 import jumpTo from '../jump';
-import { useTranslation } from 'react-i18next';
-
+import { useTranslation } from "next-export-i18n";
 
 function Navigation() {
     const boxRef = useRef();
-    const { t , i18n, ready} = useTranslation('navigation', { useSuspense: false });
+    const { t} = useTranslation();
 
     useEffect(() => {
         var tl = gsap.timeline();
@@ -31,21 +30,18 @@ function Navigation() {
     });
 
 
-    if (ready)
         return (
         <header className = {navCSS.header} ref={boxRef}>
             <nav id = "nav-menu" className = {navCSS.navMenu}>
-                <a className={navCSS.menuLink + ' ' + navCSS.active} onClick={() => {jumpTo('#main')}}><span>{t("start")}</span></a>
-                <a className={navCSS.menuLink} onClick={() => {jumpTo('#about')}}><span>{t("about")}</span></a>
-                <a className={navCSS.menuLink} onClick={() => {jumpTo('#motivations')}}><span className = {navCSS.smallerTitle}>{t("motivations")}</span></a>
-                <a className={navCSS.menuLink} onClick={() => {jumpTo('#services')}}><span>{t("services")}</span></a>
-                <a className={navCSS.menuLink} onClick={() => {jumpTo('#skillset')}}><span>{t("skillset")}</span></a>
-                {/* <a className={navCSS.menuLink} onClick={() => {jumpTo('#certifications')}}><span className = {navCSS.smallerTitle}>{t("certifications")}</span></a> */}
-                <a className={navCSS.menuLink} onClick={() => {jumpTo('#projects')}}><span>{t("projects")}</span></a>
+                <a className={navCSS.menuLink + ' ' + navCSS.active} onClick={() => {jumpTo('#main')}}><span>{t("navigation.start")}</span></a>
+                <a className={navCSS.menuLink} onClick={() => {jumpTo('#about')}}><span>{t("navigation.about")}</span></a>
+                <a className={navCSS.menuLink} onClick={() => {jumpTo('#motivations')}}><span className = {navCSS.smallerTitle}>{t("navigation.motivations")}</span></a>
+                <a className={navCSS.menuLink} onClick={() => {jumpTo('#services')}}><span>{t("navigation.services")}</span></a>
+                <a className={navCSS.menuLink} onClick={() => {jumpTo('#skillset')}}><span>{t("navigation.skillset")}</span></a>
+                {/* <a className={navCSS.menuLink} onClick={() => {jumpTo('#certifications')}}><span className = {navCSS.smallerTitle}>{t("navigation.certifications")}</span></a> */}
+                <a className={navCSS.menuLink} onClick={() => {jumpTo('#projects')}}><span>{t("navigation.projects")}</span></a>
             </nav>
         </header>);
-    else
-    return(<></>)
 }
 
 
