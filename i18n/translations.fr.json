@@ -6,7 +6,8 @@
         },
         "extra": {
             "language": "Langue",
-            "downloadPdf": "La version imprimable au format PDF (Seulement français)",
+            "downloadPdf": "La version imprimable au format PDF",
+            "pdflink": "CV - French",
             "source": "Code source",
             "website": "Site web",
             "technologies": {

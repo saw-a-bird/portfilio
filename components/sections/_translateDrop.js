@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import { useTranslation, useLanguageQuery, LanguageSwitcher } from "next-export-i18n";
 import css from '../../styles/change_lng.module.css'
 
-const Languages = {
+export const Languages = {
     "en": "English",
     "fr": "French"
 }

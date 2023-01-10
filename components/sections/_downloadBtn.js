@@ -3,11 +3,9 @@ import downloadcss from '../../styles/download_btn.module.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "@fortawesome/fontawesome-svg-core/styles.css"
 import { faFilePdf, faSpinner } from '@fortawesome/free-solid-svg-icons'
-import { useTranslation } from "next-export-i18n";
 
 
-function DownloadLink() {
-  const { t } = useTranslation();
+const DownloadLink = ({t}) => {
   // const [isMobile, setIsMobile] = useState(false)
   const [currentIcon, setIcon] = useState(faFilePdf);
 
@@ -24,7 +22,7 @@ function DownloadLink() {
           
           /* Set delay before switching from loading to success. */
           window.setTimeout(function() {
-            var win = window.open('CV.pdf', '_blank', 'fullscreen=yes');
+            var win = window.open(downloadButton.id +'.pdf', '_blank', 'fullscreen=yes');
             win.document.title = "Mahdi Abdelkebir - CV"
             downloadButton.classList.remove(downloadcss.loading);
             setIcon(faFilePdf);
@@ -51,7 +49,7 @@ function DownloadLink() {
   
   return (
   <div title ={t("common.extra.downloadPdf")} className={downloadcss.container}>
-    <a href="#" className={downloadcss.button}>
+    <a href = "#" id={t("common.extra.pdflink")} className={downloadcss.button}>
       <FontAwesomeIcon icon={currentIcon} color="#fff" />
     </a>
   </div>)
