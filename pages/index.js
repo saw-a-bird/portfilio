@@ -19,7 +19,7 @@ const Home = (props) => {
          <link rel="icon" href="/favicon.ico" /> {/* CHANGE THIS */}
       </Head>
        <SocialLinks/>
-      <DownloadLink/>
+      <DownloadLink t = {t}/>
       <TranslateDrop/>
       <MainPage t = {t}/>
        <AboutPage t = {t}/>
